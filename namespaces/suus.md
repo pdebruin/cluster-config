@@ -2,5 +2,5 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    name: suus
-  name: suus
+    name: team-a
+  name: team-a
