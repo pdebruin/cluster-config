@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspcore3-deployment
+  namespace: team-b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aspcore3
+  template:
+    metadata:
+      labels:
+        app: aspcore3
+    spec:
+      containers:
+      - name: aspcore3-container
+        image: "pdebruin/aspcore3:latest"
+        ports:
+        - containerPort: 80
