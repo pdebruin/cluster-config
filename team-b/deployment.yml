@@ -16,6 +16,7 @@ spec:
       containers:
       - name: aspcore3-container
         image: "pieterd.azurecr.io/pdebruin/aspcore3:latest"
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
       imagePullSecrets:
